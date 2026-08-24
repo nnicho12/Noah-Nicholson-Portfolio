@@ -2,7 +2,7 @@
 
 ![MEGR 2156-7 Title](MEGR2156title.png)
 
-This site is the working record of your engineering design decisions across MEGR 2157. Every entry follows the Analyze, Decide, Communicate structure in accordance with standard engineering documentation practice, so a reader can see not just what you built, but how and why you built it that way. Engineering documentation is a skill developed through deliberate practice. Each assignment is an opportunity to improve the precision, clarity, and professional quality of how you record and defend your work. As you progress through the semester your engineering capability will grow alongside your documentation — this portfolio is the record of that journey.
+I am Noah Nicholson, a third year mechanical engineering student with a concentration in motorsports. From playing any game with two to four wheels and a motor, to building a 1965 Shelby Cobra kit car with my dad, I was infatuated with racing. I came to UNC Charlotte to continue to follow this passion because I simply had no other. This portfolio will detail the next and latest steps in my journey to the career I have been building towards from the beginning.
 
 > **Engineering is the art of making decisions you can defend.**
 
