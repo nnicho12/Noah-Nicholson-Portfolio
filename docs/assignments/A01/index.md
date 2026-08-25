@@ -31,7 +31,7 @@ Professional Tone: The author used a respectful, however some sentences are stru
 
 
 # Product Analysis:
-<img src="scissors.png" alt="scissors" style="transform:scale(0.5); transform-origin:left top; display:inline-block;">
+<img src="scissors.png" alt="scissors" style="transform:scale(0.1); transform-origin:left top; display:inline-block;">
 ## Decide
 
 
