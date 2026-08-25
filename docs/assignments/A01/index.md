@@ -44,6 +44,10 @@ C.
 The grip is designed to provide a surface for the user's fingers to rest on while also providing enough freedom to move the fingers in the motion required to generate the shear force needed to fracture a desired object. Additionally it provided protection from the steel blades underneath the grips.
 
 <img src="Scissors-pin.png" alt="Scissors-pin" style="width: 200px; height: auto; transform-origin:left top; display:inline-block;">
+
+The pin serves the purpose of interlocking the two blades and locking the blades movements to be symmetrical to the other. This ensures that the blades will always work parallel to each other in order to create a perfect shear fracture on a desired object.
+
+<img src="Scissors-blade.png" alt="Scissors-blade" style="width: 200px; height: auto; transform-origin:left top; display:inline-block;">
 ## Decide
 
 
