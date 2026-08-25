@@ -8,7 +8,7 @@ Decide: Make a choice between alternatives, document your criteria, and justify 
 Communicate: Present your reasoning so clearly that a colleague can reproduce your work without asking you a single question.
 
 ## Analyze
-# 1: [Lao Thomorn](https://myportfolio-7s0.pages.dev/)
+# Portfolio Analysis 1: [Lao Thomorn](https://myportfolio-7s0.pages.dev/)
 
 Navigability: Yes, I was able to clearly locate and access the author's projects easily and well within 60 seconds.
 
@@ -19,7 +19,7 @@ Evidence of Reasoning: Projects contained the purpose for which they were create
 Professional Tone: The author is to the point and does not use any unneeded information. Clear and professional/respectful tone throughout.
 
 
-# 2: [narasimha67](https://narasimha67-mech.github.io/Narasimha_cad_portfilio/)
+# Portfolio Analysis 2: [narasimha67](https://narasimha67-mech.github.io/Narasimha_cad_portfilio/)
 
 Navigability: Easily able to access the author's projects within one minute and they are clearly labeled.
 
@@ -29,6 +29,8 @@ Evidence of Reasoning: Author provided descriptions of the projects and the goal
 
 Professional Tone: The author used a respectful, however some sentences are structured similarly to bullet points and are not complete sentences.
 
+
+# Product Analysis: 
 ## Decide
 
 
