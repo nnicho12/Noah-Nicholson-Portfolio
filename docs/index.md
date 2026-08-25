@@ -1,38 +1,5 @@
 # Noah Nicholson – Design Portfolio
 
-<style>
-body {
-  background-color: #1a1a1a;
-  position: relative;
-  overflow-x: hidden;
-}
-
-body::before,
-body::after,
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: 100vh;
-  pointer-events: none;
-  z-index: -1;
-}
-
-body::before {
-  background: linear-gradient(45deg, transparent 48%, #ffff00 48%, #ffff00 52%, transparent 52%);
-  right: 50px;
-}
-
-body::after {
-  background: linear-gradient(45deg, transparent 48%, #ff0000 48%, #ff0000 52%, transparent 52%);
-  right: 150px;
-}
-</style>
-
-<div style="position: fixed; top: 0; right: 250px; width: 200px; height: 100vh; background: linear-gradient(45deg, transparent 48%, #0000ff 48%, #0000ff 52%, transparent 52%); pointer-events: none; z-index: -1;"></div>
-
 <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
   <img src="cobra1.png" alt="Cobra 1" style="width:48%; max-width:600px; height:auto;">
   <img src="cobra2.png" alt="Cobra 2" style="width:48%; max-width:600px; height:auto;">
