@@ -60,6 +60,14 @@ Alternative Solutions to scissors include hole punchers and paper cutters
 Design Decision: The sharpened sides of the blades face away from each other when the scissors are in a closed position, this is to ensure the face of the sharpened side of the scissors faces inwards and not outwards in order to minimize the ability for user injury while handling the product in a closed position.
 ## Decide
 
+1. Homepage Identity:  I plan to make my home page centered around motorsports and my kit car I built with my dad and brother. Motorsports is what made me become an engineer so it will be a large part of me so it should be an equally large part of my engineering page as it is a reflect of me. During this process of building the Cobra, we made personal changes and designed new ways to install and fit certain items to the car which was my first major step in becoming an engineer. We encountered many problems so we researched, made a plan, and executed on it. This project introduced me to almost every aspect of engineering and developed my skills substantially.
+
+2. One Intentional Customization: I chose to change the banner image on the home page. This is largely in part to the fact that my biggest engineering accomplishment to date is the completion of a 1965 Shelby Cobra kit car with my dad and brother so having it as my banner shows not only my engineering capabilities but also my passion.
+
+3. Every assignment will be a display of my abilities and thought process as an engineer fit to act as a representation of the work employers should expect of me.
 
 ## Communicate
+
+Noah Nicholson
+
 
