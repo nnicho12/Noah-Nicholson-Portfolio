@@ -38,7 +38,12 @@ A. The function of this product is to generate a shear force by creating two opp
 B. A pair of scissors (amazon Basics Multipurpose Stainless Steel Scissors) uses steel blades (2), Plastic grips (2), and a pin (1) to hold the blades together. The model uses steel to create the shear force, this is reasonable due to the comparison between the moment of elasticity between steel and the materials that the scissors would be used to shear.
 
 C. 
+
 <img src="Scissors-grip.png" alt="Scissors-grip" style="width: 200px; height: auto; transform-origin:left top; display:inline-block;">
+
+The grip is designed to provide a surface for the user's fingers to rest on while also providing enough freedom to move the fingers in the motion required to generate the shear force needed to fracture a desired object. Additionally it provided protection from the steel blades underneath the grips.
+
+<img src="Scissors-pin.png" alt="Scissors-pin" style="width: 200px; height: auto; transform-origin:left top; display:inline-block;">
 ## Decide
 
 
