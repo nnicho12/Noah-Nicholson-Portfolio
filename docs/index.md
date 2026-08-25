@@ -1,6 +1,9 @@
 # Noah Nicholson – Design Portfolio
 
-![cobra1](cobra1.png) ![cobra2](cobra2.png)
+<div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
+  <img src="cobra1.png" alt="Cobra 1" style="width:48%; max-width:600px; height:auto;">
+  <img src="cobra2.png" alt="Cobra 2" style="width:48%; max-width:600px; height:auto;">
+</div>
 
 I am Noah Nicholson, a third year mechanical engineering student with a concentration in motorsports. From playing any game with two to four wheels and a motor, to building a 1965 Shelby Cobra kit car with my dad, I was infatuated with racing. I came to UNC Charlotte to continue to follow this passion because I simply had no other. This portfolio will detail the next and latest steps in my journey to the career I have been building towards from the beginning.
 
