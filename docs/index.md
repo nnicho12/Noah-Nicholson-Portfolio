@@ -5,7 +5,7 @@
   <img src="cobra2.png" alt="Cobra 2" style="width:48%; max-width:600px; height:auto;">
 </div>
 
-I am Noah Nicholson, a third year mechanical engineering student with a concentration in motorsports. From playing any game with two to four wheels and a motor, to building a 1965 Shelby Cobra kit car with my dad, I was infatuated with racing. I came to UNC Charlotte to continue to follow this passion because I simply had no other. This portfolio will detail the next and latest steps in my journey to the career I have been building towards from the beginning.
+I am Noah Nicholson, a third year mechanical engineering student with a concentration in motorsports. This portfolio will detail my past and latest steps in my career as a mechanical engineer. Additionally, I will showcase my abilities to design, understand, and document my models and designs giving an insight into how I approach and solve a variety of situations in the most effective and efficient manner possible.
 
 > **Engineering is the art of making decisions you can defend.**
 
