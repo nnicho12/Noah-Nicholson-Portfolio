@@ -30,7 +30,8 @@ Evidence of Reasoning: Author provided descriptions of the projects and the goal
 Professional Tone: The author used a respectful, however some sentences are structured similarly to bullet points and are not complete sentences.
 
 
-# Product Analysis: 
+# Product Analysis:
+![Scissors](scissors.png)
 ## Decide
 
 
