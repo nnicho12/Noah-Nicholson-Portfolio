@@ -48,6 +48,16 @@ The grip is designed to provide a surface for the user's fingers to rest on whil
 The pin serves the purpose of interlocking the two blades and locking the blades movements to be symmetrical to the other. This ensures that the blades will always work parallel to each other in order to create a perfect shear fracture on a desired object.
 
 <img src="Scissors-blade.png" alt="Scissors-blade" style="width: 200px; height: auto; transform-origin:left top; display:inline-block;">
+
+The blades are used to create the shear fracture in a given object, this is done when the user's fingers act as an external force pushing the blades together until they meet. while this is happening the blade are moving parallel with each other so that any object between the blades at any given moment of this movement will undergo a shearing force of the blades. The sharp edges of the blades concentrate the force so it reaches the object's fracture point quicker.
+
+D. 
+
+Patent Number: US 2008/0295339 A1, Authors: Daniel J. Lipscomb, Jason Crowell
+
+Alternative Solutions to scissors include hole punchers and paper cutters
+
+Design Decision: The sharpened sides of the blades face away from each other when the scissors are in a closed position, this is to ensure the face of the sharpened side of the scissors faces inwards and not outwards in order to minimize the ability for user injury while handling the product in a closed position.
 ## Decide
 
 
