@@ -20,3 +20,9 @@ I designed a simple truss using minimal supports. This was done by using only th
 ## Communicate
 
 [View NNA02.pdf](./NNA02.pdf)
+
+![Truss Design](./NNA02-preview.png)
+
+[Download Full CAD Model (SOLIDWORKS)](./NNA02.SLDPRT)
+
+
