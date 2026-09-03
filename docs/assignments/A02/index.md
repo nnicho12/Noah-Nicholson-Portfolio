@@ -10,14 +10,12 @@ The pins are to be identical to each other and each element is to have the same 
 
 ## Analyze
 
-2. I designed a simple truss using minimal supports. This was done by using only the necessary material to connect the pins together. This was done to limit weight and cost of the truss.
-
-3. I was able to determine the cross sectional area of the pins to be 90.5 mm^2. This is to be done with the safety factor of 4 into account. this works because it is smaller than the cross-sectional area of the beams.
+3. I was able to determine the cross sectional area of the pins to be 90.5 mm^2. This is to be done with the safety factor of 4 into account. this works because it is smaller than the cross-sectional area of the beams. The structure itself isn't as efficient as it could be in terms of strength, however in terms of cost and weight, this truss is supior.
 
 4.  
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
-
+I designed a simple truss using minimal supports. This was done by using only the necessary material to connect the pins together. This was done to limit weight and cost of the truss.
 ## Communicate
 
