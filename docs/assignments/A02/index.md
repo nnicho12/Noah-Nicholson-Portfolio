@@ -20,7 +20,8 @@ I designed a simple truss using minimal supports. This was done by using only th
 ## Communicate
 
 <iframe src="./NNA02.pdf" width="100%" height="800px"></iframe>
-[Download PDF](./NNA02.pdf)
+[Download PDF] 
+(./NNA02.pdf)
 
 
 
