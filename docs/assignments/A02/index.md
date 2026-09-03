@@ -16,7 +16,9 @@ Document key engineering lessons learned from the process.
 
 3. I was able to determine the cross sectional area of the pins to be 90.5 mm^2. This is to be done with the safety factor of 4 into account. this works because it is smaller than the cross-sectional area of the beams. The structure itself isn't as efficient as it could be in terms of strength, however in terms of cost and weight, this truss is supior.
 
-4.  
+_Lessons Learned_
+I struggled to figure out how to first solve for my internals because I was still rusty on my statics so once I was refreshed on the methods I was able to get my internal forces.
+
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
