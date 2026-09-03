@@ -19,3 +19,4 @@ _Which geometry did you select, and why? This is your first open design choice i
 I designed a simple truss using minimal supports. This was done by using only the necessary material to connect the pins together. This was done to limit weight and cost of the truss.
 ## Communicate
 
+[View NNA02.pdf](./NNA02.pdf)
