@@ -12,7 +12,9 @@
 ![Von Mises Stress](./A3VMSM.png)
 
 ## Design Reflection
+Calculated Deflection: .00225 in    FEA Result Deflection: .001908 in
 
+15.2% discrepancy, this could have been a result of the research done to get my calculations. The modulus of Elasticity that I used was the smallest value allowed for the tests, beyond that, solidworks rounded my number I got from my calculations for my diameter down when I was inputting the value, this could have been another cause for discrepancy. I would trust the FEA result more because it takes into account more properties of the aluminum I selected than what is being used in my calculations.
 
 ## Lessons learned
 
