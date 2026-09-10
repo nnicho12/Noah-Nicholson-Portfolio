@@ -5,7 +5,7 @@
 
 ![CAD View 1](./A3Cad1.png)
 ![CAD View 2](./A3Cad2.png)
-
+[Download the SolidWorks part (A)3.SLDPRT)](./A03.SLDPRT)
 ## FEA
 
 ![Deformation Map](./A3Defmap.png)
