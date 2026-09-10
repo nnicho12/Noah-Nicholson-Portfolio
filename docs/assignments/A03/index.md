@@ -1,13 +1,13 @@
-# A3 – [Topic]
+# A3 – Parametric and FEA
 
-## Objective
-
-
-## Analyze
+## Parametric Design
 
 
-## Decide
+## FEA
 
 
-## Communicate
+## Design Reflection
+
+
+## Lessons learned
 
