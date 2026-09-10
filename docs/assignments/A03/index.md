@@ -19,4 +19,4 @@ Calculated Deflection: .00225 in    FEA Result Deflection: .001908 in
 The peak stress of the hole would be at 1599 psi and it would come out to have a 1.07 wt which is still below my safety factor of 2.
 
 ## Lessons learned
-I should try to make sure that all numbers used in my calculations are not rounded. No numbers should be rounded unless the final answer is to be rounded to a certain number, and in that case, only the final answer gets rounded, not any of the numbers required for the calculations of the final answers.
+I should try to make sure that all numbers used in my calculations are not rounded. No numbers should be rounded unless the final answer is to be rounded to a certain number, and in that case, only the final answer gets rounded, not any of the numbers required for the calculations of the final answers. This assignment took and hour and a half to complete the design and simulations. and another 20 minutes to place the information into the webpage.
