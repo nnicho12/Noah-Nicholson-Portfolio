@@ -1,7 +1,7 @@
 # A3 – Parametric and FEA
 
 ## Parametric Design
-[A03Design.pdf](./A03Design.pdf)
+<img width="1320" height="908" alt="A3Design" src="https://github.com/user-attachments/assets/034a6c28-a118-4fa3-9329-2f1563efaf24" />
 
 ![CAD View 1](./A3Cad1.png)
 ![CAD View 2](./A3Cad2.png)
