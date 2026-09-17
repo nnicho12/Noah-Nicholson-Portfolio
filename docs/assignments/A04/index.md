@@ -1,7 +1,7 @@
 # A4 – Motor Mount
 
 ## Documentation
-[A4work.pdf](https://github.com/user-attachments/files/32319811/A4work.pdf)
+docs/assignments/A04/A4work.pdf
 This is the work done to reach the desired dimensions for the mount
 
 <img width="750" height="500" alt="Screenshot 2026-09-17 000510" src="https://github.com/user-attachments/assets/1ea0e22d-e1ed-4697-80a3-3bdc4c7ba67f" />
