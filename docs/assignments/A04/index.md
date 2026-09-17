@@ -1,16 +1,7 @@
 # A4 – Motor Mount
 
 ## Documentation
-<iframe
-  src="./A4work.pdf"
-  width="100%"
-  height="800"
-  style="border: none;">
-</iframe>
-
-<p>
-  <a href="./A4work.pdf" target="_blank">Open PDF in a new tab</a>
-</p>
+(docs/assignments/A04/A4work.pdf)
 
 This is the work done to reach the desired dimensions for the mount
 
