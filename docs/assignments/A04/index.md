@@ -33,6 +33,6 @@ This assignment took around 2 hours to complete due to having to restart my calc
 
 I learned to first make sure the structure that I want to create is the final and most engineered it can be so I can avoid having to make large changes to it after calculations therefore, invalidating those calculations and needing to start over again. This will reduce workload and create more thoughtful models.
 
-
+(cad model)[docs/assignments/A04/A4MotorMount.SLDPRT]
 
 
