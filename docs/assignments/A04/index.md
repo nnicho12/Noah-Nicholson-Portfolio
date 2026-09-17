@@ -1,7 +1,7 @@
 # A4 – Motor Mount
 
 ## Documentation
-(docs/assignments/A04/A4work.pdf)
+[docs/assignments/A04/A4work.pdf]
 
 This is the work done to reach the desired dimensions for the mount
 
