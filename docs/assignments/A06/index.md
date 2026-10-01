@@ -29,7 +29,9 @@ This is feature E
 
 This is the completed model [Cad Model](A06prt.SLDPRT)
 
-## Analyze
+## Drawing
+<img width="500" height="400" alt="Screenshot 2026-10-01 000257" src="https://github.com/user-attachments/assets/be872f95-7255-4bb7-a0b4-a995739e9ed7" />
+This is the completed drawing for the model [A06 Drawing](A06prt.SLDDRW)
 
 
 ## Decide
