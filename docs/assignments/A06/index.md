@@ -30,12 +30,11 @@ This is feature E
 This is the completed model [Cad Model](A06prt.SLDPRT)
 
 ## Drawing
-<img width="500" height="400" alt="Screenshot 2026-10-01 000257" src="https://github.com/user-attachments/assets/be872f95-7255-4bb7-a0b4-a995739e9ed7" />
+
+<img width="500" height="400" alt="Screenshot 2026-10-01 002439" src="https://github.com/user-attachments/assets/da5ccbec-f6b2-44ea-9f28-9846295f502c" />
+
 This is the completed drawing for the model [A06 Drawing](A06prt.SLDDRW)
 
 
-## Decide
-
-
-## Communicate
+## Reflection
 
