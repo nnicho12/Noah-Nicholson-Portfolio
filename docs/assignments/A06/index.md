@@ -38,3 +38,6 @@ This is the completed drawing for the model [A06 Drawing](A06prt.SLDDRW)
 
 ## Reflection
 
+One the second page of my work, I identified that on feature E, the thickness was chosen to be .125 in because the math proved that the stress from the thickness was going to be the driving factor for that dimension.
+
+I chose to make the tolerance of the diameter of feature A more demanding than the rest because this is where the strap would sit on the feature and therefore is the most crucial to be the most accurate. 
