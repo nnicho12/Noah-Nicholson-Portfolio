@@ -27,7 +27,8 @@ This is feature E
 
 <img width="400" height="500" alt="Screenshot 2026-09-30 234029" src="https://github.com/user-attachments/assets/8bff5391-01dd-4686-8d97-aee3c2a0e931" />
 
-This is the completed model
+This is the completed model [Cad Model](./A06prt.prt)
+
 ## Analyze
 
 
