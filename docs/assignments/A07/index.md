@@ -1,5 +1,5 @@
 # A7 – FEA Bracket
-CAD MODEL: 
+CAD MODEL: [Cad Model](A06prt.SLDPRT)
 ## Preporcessing
 
 Design 1: 
