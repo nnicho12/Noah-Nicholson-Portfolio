@@ -9,6 +9,7 @@
 <img width="1008" height="1322" alt="Screenshot 2026-10-29 030014" src="https://github.com/user-attachments/assets/36b98437-f78d-45ce-8080-51d49e77a070" />
 
 Part c: Journal Bearing Selection: SAE 841 oil embedded bronze sleeve bearings were selected from McMaster-Carr. For the 0.125-in input shaft, McMaster part 6391K753 was selected, with a 1/8 in nominal shaft diameter, 3/16 in housing diameter, and 1/4 in length. For the 0.250 in output shaft, McMaster part 6391K126 was selected, with a 1/4 in nominal shaft diameter, 5/16 in housing diameter, and 1/4 in length. SAE 841 oil embedded bronze provides self lubrication and is appropriate for rotating journal bearing applications.
+
 ## Cad Model
 
 Cad Models: [Case](A8case.SLDPRT) , [Cover](A8Cover.SLDPRT)
@@ -19,5 +20,7 @@ Cad Models: [Case](A8case.SLDPRT) , [Cover](A8Cover.SLDPRT)
 
 <img width="1356" height="1132" alt="Screenshot 2026-10-29 025906" src="https://github.com/user-attachments/assets/964e7fb4-bc2b-4e5c-9f20-650d83702c5d" />
 
-## Communicate
+## Lessons learned
+
+I found it hard to navigate through McMaster-Carr for a bit in order to know what I was looking for. Also it was difficult for me to envision what my gear orientation needed to be and what my gear box need to look like so it took me a while to figure out what I was going to do and how I was going to do it.
 
