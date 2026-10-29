@@ -10,6 +10,9 @@
 
 Part c: Journal Bearing Selection: SAE 841 oil embedded bronze sleeve bearings were selected from McMaster-Carr. For the 0.125-in input shaft, McMaster part 6391K753 was selected, with a 1/8 in nominal shaft diameter, 3/16 in housing diameter, and 1/4 in length. For the 0.250 in output shaft, McMaster part 6391K126 was selected, with a 1/4 in nominal shaft diameter, 5/16 in housing diameter, and 1/4 in length. SAE 841 oil embedded bronze provides self lubrication and is appropriate for rotating journal bearing applications.
 ## Cad Model
+
+Cad Models: [Case](A8case.SLDPRT) , [Cover](A8Cover.SLDPRT)
+
 <img width="1678" height="1320" alt="Screenshot 2026-10-29 023306" src="https://github.com/user-attachments/assets/024092bd-5895-4ee2-b4e4-efda7846a141" />
 
 <img width="1422" height="1232" alt="Screenshot 2026-10-29 025337" src="https://github.com/user-attachments/assets/8e0111e6-7b91-476b-b78b-d9e04e803922" />
