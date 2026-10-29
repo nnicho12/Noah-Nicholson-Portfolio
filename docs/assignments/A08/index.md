@@ -1,9 +1,9 @@
 # A8 – Gears
 
-## Objective
+## Design of the Shafts
 
 
-## Analyze
+## Design of the Journal Bearings
 
 
 ## Decide
