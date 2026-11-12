@@ -116,8 +116,64 @@ Given the constraints on the crosshead, I had to find the stress and deflection 
 
 
 
-## Decide
-_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
+## Table Data   
+
+<table> 
+  <tr>
+    <th>Item number</th>
+    <th>Quantity </th>
+    <th>Name</th>
+    <th>Cost/Item</th>
+    <th>Cost</th>
+    <th>Purchase Link</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>Precision Acme Lead Screw, 1060/Alloy Steel, 1/2"-10 Thread, 2 ft. Long</td>
+    <td>$65.24</td>
+    <td>$130.48</td>
+    <td>https://www.mcmaster.com/6350K61/</td>
+  </tr>
+ 
+  <tr>
+    <td>2</td>
+    <td>2</td>
+    <td>Precision Acme Flange Nut, 932 Bearing Bronze, 1/2"-10 Thread</td>
+    <td>$178.60</td>
+    <td>$357.20</td>
+    <td>https://www.mcmaster.com/97790A110/</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>4</td>
+    <td>T-Slotted Framing Single Rail, 40 mm x 40 mm, 2 ft. Long</td>
+    <td>$21.15</td>
+    <td>$84.60</td>
+    <td>https://www.mcmaster.com/6575N25/</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>8</td>
+    <td>T-Slotted Framing Bracket</td>
+    <td>$7.06</td>
+    <td>$56.48</td>
+    <td>https://www.mcmaster.com/5537T937/</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>$628.76</td>
+  </tr>
+
+</table>
+
 
 ## Communicate
 
