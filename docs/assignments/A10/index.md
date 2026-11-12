@@ -102,7 +102,7 @@ ns,actual=1200lbf224.8lbf=5.344.0
   <figure style="display: inline-block; width: 100%; max-width: 900px; margin: 0 auto;">
     <iframe src="Leadscrew_Hand_Calculations.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
       <p>Your browser does not support iframes. 
-         <a href="A10CrossheadDesign1">Download Crosshead Work.</a>
+         <a href="A10CrossheadDesign1.pdf">Download Crosshead Work.</a>
       </p>
     </iframe>
   </figure>
