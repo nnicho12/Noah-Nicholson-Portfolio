@@ -1,4 +1,5 @@
-# A10 – Lead Screw Translating System
+
+# Group Portfolio: Lead Screw Design
 
 ## Leadscrew Sizing, Speed, Torque & Flange Nut Selection (Randy Hoang)
 
@@ -48,29 +49,24 @@ For my part of the project, I focused on sizing the leadscrew drivetrain for our
    - Lead ($1/2^{\prime\prime}-10$ Acme): L=0.100in=2.54mm (0.00254m)
 
 2. **Minimum Root Diameter (dr):**
-  
+   
 allow=yns=380MPa4=95MPa
-
-  
+   
 dr4Pallow=4(1000N)(95106N/m2)=0.00366m=3.66mm (0.144in)
 
-
 3. **Rotational Speed Range (N to N):**
-  
+   
 N=vL=1mm/min2.54mm/rev=0.39rpm
-
-  
+   
 N=vL=50mm/min2.54mm/rev=19.69rpm
-
 
 4. **Max Input Torque per Screw (T):**
    - With mean diameter dm=d-L2=0.01143m (0.450in) and steel-on-bronze friction f=0.15:
    $$T = \frac{P d_m}{2} \left( \frac{L + \pi f d_m}{\pi d_m - f L} \right) = \frac{(1000\text{ N})(0.01143\text{ m})}{2} \left( \frac{0.00254\text{ m} + \pi(0.15)(0.01143\text{ m})}{\pi(0.01143\text{ m}) - (0.15)(0.00254\text{ m})} \right) = \mathbf{1.26\text{ N}\cdot\text{m}} \ (\mathbf{11.15\text{ in}\cdot\text{lbf}})$$
 
 5. **Flange Nut Safety Factor Check:**
-  
+   
 ns,actual=1200lbf224.8lbf=5.344.0
-
 
 ---
 
@@ -80,6 +76,61 @@ ns,actual=1200lbf224.8lbf=5.344.0
 | :--- | :--- | :--- | :--- | :--- |
 | **Leadscrews (x2)** | $1/2^{\prime\prime}-10$ Acme, 1060 Steel | $\varnothing 0.500\text{ in}$ Nominal, 18.0in Long, L=0.100in (2.54mm) | Right-Hand, Single-Start, Class 2C | Spaced Lb=150mm (5.91in) center-to-center |
 | **Flange Nuts (x2)** | McMaster [**97790A110**](https://www.mcmaster.com/97790A110/) (932 Bearing Bronze) | Barrel $\varnothing 1.000\text{ in}$, Total Length 1.750in, Flange $\varnothing 2.000\text{ in} \times 0.375\text{ in}$ thick | 1,200lbf Thrust, 35,000psi Tensile | Needs $\varnothing 1.000\text{ in}$ clearance hole in crosshead + custom bolt holes in the 2.000in flange |
+
+---
+
+## Crosshead Design (Noah Nicholson)
+
+<div align="center" style="margin: 20px 0;">
+  <figure style="display: inline-block; width: 100%; max-width: 900px; margin: 0 auto;">
+    <iframe src="A10CrossheadDesign1.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
+      <p>Your browser does not support iframes. 
+         <a href="A10CrossheadDesign1.pdf">Download Crosshead Work.</a>
+      </p>
+    </iframe>
+  </figure>
+</div>
+
+### Notes on Work
+Given the constraints on the crosshead, I had to find the stress and deflection on the crosshead from the given 2000N load. I found that the minimum thickness to meet the stress requirement was 12.77mm. However, the deflection analysis stated that the minimum thickness would need to be at least 8.94mm. Since the stress analysis yielded a larger minimum thickness, we found that the minimum thickness needed on the crosshead would be 12.77mm. I rounded this number to 15.00mm in the rest of my work as shown.
+
+---
+
+## Bill of Materials & Cost Analysis (Atiba Johnson)
+
+| Item # | Qty | Name | Cost / Item | Total Cost | Purchase Link |
+| :---: | :---: | :--- | :---: | :---: | :--- |
+| 1 | 2 | Precision Acme Lead Screw, 1060/Alloy Steel, 1/2"-10 Thread, 2 ft. Long | $65.24 | $130.48 | [Link](https://www.mcmaster.com/6350K61/) |
+| 2 | 2 | Precision Acme Flange Nut, 932 Bearing Bronze, 1/2"-10 Thread | $178.60 | $357.20 | [Link](https://www.mcmaster.com/97790A110/) |
+| 3 | 4 | T-Slotted Framing Single Rail, 40 mm x 40 mm, 2 ft. Long | $21.15 | $84.60 | [Link](https://www.mcmaster.com/6575N25/) |
+| 4 | 8 | T-Slotted Framing Bracket | $7.06 | $56.48 | [Link](https://www.mcmaster.com/5537T937/) |
+| **Total** | | | | **$628.76** | |
+
+---
+
+## Lessons Learned & Project Takeaways
+
+- **Team Coordination:** Working as a group really highlighted how important it is to communicate early and lock down key interfaces—like keeping our center-to-center span and hole clearances aligned between the drivetrain calculations and the crosshead CAD.
+- **Checking Multiple Constraints:** Comparing our stress and deflection limits showed us why it's critical to evaluate different failure modes instead of just relying on the first number you calculate, since the stricter requirement ended up driving our final thickness.
+- **Hardware Selection:** We learned quickly that generic off-the-shelf parts don't always cut it for load-bearing applications, so taking the extra time to track down rated components gave us much more confidence in the actual safety factors of our design.
+
+  ---
+  
+<div align="center" style="margin: 25px 0; gap: 12px; display: flex; justify-content: center; flex-wrap: wrap;">
+  <a href="A10.zip" download="A10.zip" style="
+    background-color: #1976d2; 
+    color: white; 
+    text-decoration: none;
+    padding: 12px 22px; 
+    font-size: 0.95em; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    display: inline-block;
+    transition: background-color 0.2s;">
+    📦 Download All Project Files &amp; Calculations (.zip)
+  </a>
+</div>
 
 <script>
   MathJax = {
@@ -94,86 +145,4 @@ ns,actual=1200lbf224.8lbf=5.344.0
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
-
-
-
-## Crosshead Design (Noah Nicholson)
-
-
-<div align="center" style="margin: 20px 0;">
-  <figure style="display: inline-block; width: 100%; max-width: 900px; margin: 0 auto;">
-    <iframe src="A10CrossheadDesign1.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
-      <p>Your browser does not support iframes. 
-         <a href="A10CrossheadDesign1.pdf">Download Crosshead Work.</a>
-      </p>
-    </iframe>
-  </figure>
-</div>
-
-
-### Notes on Work
-Given the constraints on the crosshead, I had to find the stress and deflection on the crosshead from the given 2000 newton load. I found that the minimum thickness to meet the stress requirement was 12.77 mm. However the deflection analysis stated that the minimum thickness would need to be at least 8.94 mm. Since the stress analysis yielded a larger minimum thickness, we found that the minimum thickness needed on the crosshead would be 12.77 mm, I rounded this number to 15.00 mm in the rest of my work as shown.
-
-
-
-## Table Data   
-
-<table> 
-  <tr>
-    <th>Item number</th>
-    <th>Quantity </th>
-    <th>Name</th>
-    <th>Cost/Item</th>
-    <th>Cost</th>
-    <th>Purchase Link</th>
-  </tr>
-
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>Precision Acme Lead Screw, 1060/Alloy Steel, 1/2"-10 Thread, 2 ft. Long</td>
-    <td>$65.24</td>
-    <td>$130.48</td>
-    <td>https://www.mcmaster.com/6350K61/</td>
-  </tr>
- 
-  <tr>
-    <td>2</td>
-    <td>2</td>
-    <td>Precision Acme Flange Nut, 932 Bearing Bronze, 1/2"-10 Thread</td>
-    <td>$178.60</td>
-    <td>$357.20</td>
-    <td>https://www.mcmaster.com/97790A110/</td>
-  </tr>
-
-  <tr>
-    <td>3</td>
-    <td>4</td>
-    <td>T-Slotted Framing Single Rail, 40 mm x 40 mm, 2 ft. Long</td>
-    <td>$21.15</td>
-    <td>$84.60</td>
-    <td>https://www.mcmaster.com/6575N25/</td>
-  </tr>
-
-  <tr>
-    <td>4</td>
-    <td>8</td>
-    <td>T-Slotted Framing Bracket</td>
-    <td>$7.06</td>
-    <td>$56.48</td>
-    <td>https://www.mcmaster.com/5537T937/</td>
-  </tr>
-
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>$628.76</td>
-  </tr>
-
-</table>
-
-
-## Communicate
 
