@@ -97,7 +97,9 @@ ns,actual=1200lbf224.8lbf=5.344.0
 
 
 
-## Analyze
+## Crosshead Design (Noah Nicholson)
+
+
 <div align="center" style="margin: 20px 0;">
   <figure style="display: inline-block; width: 100%; max-width: 900px; margin: 0 auto;">
     <iframe src="Leadscrew_Hand_Calculations.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
@@ -107,6 +109,11 @@ ns,actual=1200lbf224.8lbf=5.344.0
     </iframe>
   </figure>
 </div>
+
+
+### Notes on Work
+Given the constraints on the crosshead, I had to find the stress and deflection on the crosshead from the given 2000 newton load. I found that the minimum thickness to meet the stress requirement was 12.77 mm. However the deflection analysis stated that the minimum thickness would need to be at least 8.94 mm. Since the stress analysis yielded a larger minimum thickness, we found that the minimum thickness needed on the crosshead would be 12.77 mm, I rounded this number to 15.00 mm in the rest of my work as shown.
+
 
 
 ## Decide
