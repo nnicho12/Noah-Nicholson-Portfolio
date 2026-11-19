@@ -1,39 +1,52 @@
-Compiled code as of 2:09 AM
+Last edited: 3:25 AM
 
-# Group Portfolio: Lead Screw Design
+# Motor Selection Design
 
-## Leadscrew Sizing, Speed, Torque & Flange Nut Selection (Randy Hoang)
+## Stepper Motor, Mount Bracket & Shaft Coupling (Randy Hoang)
 
-For my part of the project, I focused on sizing the leadscrew drivetrain for our 2kN testing frame. I established our center-to-center span at 150mm (5.91in), worked through the minimum root diameter required to handle the axial load safely, found the motor rotational speed range needed to hit our 1--50mm/min crosshead travel speeds, calculated the peak input torque per screw, and picked out a matching bronze flange nut ([`97790A110`](https://www.mcmaster.com/97790A110/)) from McMaster-Carr so the rest of the team has the exact mounting dimensions for the crosshead and CAD assembly.
+For my portion of the project, I was responsible for selecting the stepper motor, sizing the mounting bracket for bearing stress, and evaluating the flexible shaft coupling for torsional shear and alignment compliance. Based on the required peak input torque of $1.26\text{ N}\cdot\text{m}$ per screw and rotational speed range of 0.39--19.69rpm established for the leadscrew drivetrain, I selected a NEMA 23 bipolar hybrid stepper motor ([`6627T161`](https://www.mcmaster.com/6627T161/)), determined the minimum thickness for a 6061-T6 aluminum mounting bracket, and verified a clamp-on flexible beam coupling ([`6208K595`](https://www.mcmaster.com/6208K595/)) to provide documented dimensions for CAD integration and assembly.
 
 <div align="center" style="margin: 20px 0;">
   <figure style="display: inline-block; width: 100%; max-width: 900px; margin: 0 auto;">
-    <iframe src="Leadscrew_Hand_Calculations.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
+    <iframe src="Hand Calc A11.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
       <p>Your browser does not support iframes. 
-         <a href="Leadscrew_Hand_Calculations.pdf">Download the Hand Calculations PDF instead.</a>
+         <a href="Hand Calc A11.pdf">Download the Hand Calculations PDF instead.</a>
       </p>
     </iframe>
     <figcaption style="font-size: 0.85em; color: gray; margin-top: 8px;">
-      Hand Calculations &amp; Free Body Diagrams
+      Hand Calculations — Motor Selection, Mount Bracket &amp; Coupler Sizing
     </figcaption>
   </figure>
 </div>
 
 ### Component Selection & Design Notes
-- **Dual-Screw Span & Load Split (Lb=150mm / 5.91in):** Placing the two identical leadscrews at a 150mm center-to-center distance keeps the crosshead compact and prevents beam sagging under load. Running them in parallel splits our 2000N (2kN) total load evenly to P=1000N (224.8lbf) per screw, which keeps the crosshead balanced and prevents binding.
-- **Leadscrew Size:** Even though axial stress with a safety factor of 4 only requires a 3.66mm (0.144in) root diameter, going with a standard **$1/2^{\prime\prime}-10$ Acme** single-start steel screw gives us plenty of stiffness over the 18-inch minimum height and pairs easily with standard hardware.
-- **Why Part [`97790A110`](https://www.mcmaster.com/97790A110/):** A lot of standard bronze flange nuts on McMaster aren't load-rated, so I went with [**97790A110**](https://www.mcmaster.com/97790A110/) (932 Bearing Bronze, Acme Class 2C) because it is explicitly rated for **1,200lbf dynamic thrust** and **35,000psi tensile strength**. Against our 224.8lbf load per screw, that gives us a real safety factor of 5.34.
-- **Self-Locking Lead:** The $1/2^{\prime\prime}-10$ single-start profile has a $0.1^{\prime\prime}$ (2.54mm) lead, meaning the system won't back-drive when the motors stop and only needs $1.26\text{ N}\cdot\text{m}$ of torque per screw at peak load.
+- **Stepper Motor Selection ([`6627T161`](https://www.mcmaster.com/6627T161/)):** The selected NEMA 23 bipolar hybrid stepper motor provides a maximum holding torque of $600.4\text{ in}\cdot\text{ozf}$ ($\approx 4.24\text{ N}\cdot\text{m}$), a 1.8 full-step increment, a maximum speed rating of 1,300rpm, and a $1/4^{\prime\prime}$ ($0.2498^{\prime\prime}$) D-profile shaft ($3/4^{\prime\prime}$ length) with a $1.86^{\prime\prime}$ mounting bolt pattern and four $0.20^{\prime\prime}$ mounting holes.
+- **Motor Mount Bracket Thickness:** Evaluating a 6061-T6 aluminum bracket (y=276MPa, design safety factor ns=4) with a 5mm (0.005m) fastener diameter under a 1000N reference load yields an allowable bearing stress of 69MPa and a minimum bearing thickness of 2.90mm. A plate thickness of **6.00mm** was selected to ensure structural stiffness and adequate thread/fastener engagement.
+- **Flexible Coupling Selection ([`6208K595`](https://www.mcmaster.com/6208K595/)):** Torsional shear analysis for 6061-T6 (y=0.577276=159.3MPa, allowable shear stress allow=39.83MPa at ns=4) with a $1/2^{\prime\prime}$ (12.7mm) bore indicates a minimum outer diameter of 14.2mm (0.75mm minimum wall thickness). Selecting the $1\ 1/4^{\prime\prime}$ (31.75mm) OD, $2^{\prime\prime}$-long spiral-cut aluminum clamp-on coupling ($1/2^{\prime\prime} \times 1/4^{\prime\prime}$ bores, $115\text{ in}\cdot\text{lbf}$ maximum torque rating) provides substantial torque margin, zero backlash, and accommodation for minor shaft misalignments.
+- **Axial Clearance Verification:** Assembly layout must verify that the axial distance between the motor face and the leadscrew accommodates the $3/4^{\prime\prime}$ ($0.75^{\prime\prime}$) motor shaft extension and the $2^{\prime\prime}$ overall coupling length without axial interference.
 
 <div align="center" style="margin: 20px 0;">
   <figure style="display: inline-block; width: 100%; max-width: 900px; margin: 0 auto;">
-    <iframe src="Precision Acme Flange Nut, 1_2_-10 Thread Size _ McMaster-Carr.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
+    <iframe src="6627T161.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
       <p>Your browser does not support iframes. 
-         <a href="Precision Acme Flange Nut, 1_2_-10 Thread Size _ McMaster-Carr.pdf">Download the McMaster-Carr Flange Nut Spec Sheet PDF instead.</a>
+         <a href="6627T161.pdf">Download the McMaster-Carr Stepper Motor Spec Sheet PDF instead.</a>
       </p>
     </iframe>
     <figcaption style="font-size: 0.85em; color: gray; margin-top: 8px;">
-      McMaster-Carr Spec Sheet &amp; Drawing — <a href="https://www.mcmaster.com/97790A110/" target="_blank">Part 97790A110 (932 Bearing Bronze)</a>
+      McMaster-Carr Spec Sheet &amp; Drawing — <a href="https://www.mcmaster.com/6627T161/" target="_blank">Part 6627T161 (NEMA 23 Stepper Motor)</a>
+    </figcaption>
+  </figure>
+</div>
+
+<div align="center" style="margin: 20px 0;">
+  <figure style="display: inline-block; width: 100%; max-width: 900px; margin: 0 auto;">
+    <iframe src="6208K595.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
+      <p>Your browser does not support iframes. 
+         <a href="6208K595.pdf">Download the McMaster-Carr Shaft Coupling Spec Sheet PDF instead.</a>
+      </p>
+    </iframe>
+    <figcaption style="font-size: 0.85em; color: gray; margin-top: 8px;">
+      McMaster-Carr Spec Sheet &amp; Drawing — <a href="https://www.mcmaster.com/6208K595/" target="_blank">Part 6208K595 (1/2" x 1/4" Clamp-On Flexible Coupling)</a>
     </figcaption>
   </figure>
 </div>
@@ -42,109 +55,108 @@ For my part of the project, I focused on sizing the leadscrew drivetrain for our
 
 ### Analytical Calculations
 
-1. **Baseline Inputs:**
-   - Center-to-center span: Lb=150mm (5.91in)
-   - Total axial load: Ptotal=2000N  Load per screw: P=1000N (224.8lbf)
-   - Safety factor: ns=4
-   - 1060 Steel yield strength: y=380MPa (380106N/m2)
-   - Lead ($1/2^{\prime\prime}-10$ Acme): L=0.100in=2.54mm (0.00254m)
+1. **Design Parameters & Material Properties:**
+   - Required input torque per screw: $T = 1.26\text{ N}\cdot\text{m}$
+   - Crosshead linear travel speed range: v=1--50mm/min with screw lead L=2.54mm/rev (0.100in/rev)
+   - Design safety factor: ns=4
+   - 6061-T6 Aluminum properties: y=276MPa, y=0.577276=159.3MPa
+   - Reference dimensions: fastener diameter dbolt=5mm (0.005m), inner bore di=12.7mm (0.0127m, $1/2^{\prime\prime}$)
 
-2. **Minimum Root Diameter (dr):**
+2. **Required Rotational Speed Range & Motor Selection:**
    
-allow=yns=380MPa4=95MPa
-   
-dr4Pallow=4(1000N)(95106N/m2)=0.00366m=3.66mm (0.144in)
+N=1mm/min2.54mm/rev=0.39rpm,N=50mm/min2.54mm/rev=19.69rpm
+   - Selected motor: McMaster-Carr [**6627T161**](https://www.mcmaster.com/6627T161/) (NEMA 23, $600.4\text{ in}\cdot\text{ozf}$ holding torque, 1.8/step, $1/4^{\prime\prime}$ D-shaft).
 
-3. **Rotational Speed Range (N to N):**
+3. **Motor Mount Bracket Minimum Thickness (t):**
    
-N=vL=1mm/min2.54mm/rev=0.39rpm
+allow=276MPa4=69MPa
    
-N=vL=50mm/min2.54mm/rev=19.69rpm
+t=1000N(0.005m)(69106N/m2)=2.90mm6.00mm(selectedforstiffness&amp;threadengagement)
 
-4. **Max Input Torque per Screw (T):**
-   - With mean diameter dm=d-L2=0.01143m (0.450in) and steel-on-bronze friction f=0.15:
-   $$T = \frac{P d_m}{2} \left( \frac{L + \pi f d_m}{\pi d_m - f L} \right) = \frac{(1000\text{ N})(0.01143\text{ m})}{2} \left( \frac{0.00254\text{ m} + \pi(0.15)(0.01143\text{ m})}{\pi(0.01143\text{ m}) - (0.15)(0.00254\text{ m})} \right) = \mathbf{1.26\text{ N}\cdot\text{m}} \ (\mathbf{11.15\text{ in}\cdot\text{lbf}})$$
-
-5. **Flange Nut Safety Factor Check:**
+4. **Coupler Torsional Shear & Minimum Outer Diameter (do,):**
    
-ns,actual=1200lbf224.8lbf=5.344.0
+allow=159.3MPa4=39.83MPa
+   $$\tau_{\max} = \frac{16 T d_o}{\pi(d_o^4 - d_i^4)} \le 39.83 \times 10^6 \implies d_{o,\min} = \mathbf{14.2\text{ mm}}$$
+   
+twall,min=14.2mm-12.7mm2=0.75mm
+   - Selected coupling: McMaster-Carr [**6208K595**](https://www.mcmaster.com/6208K595/) ($1\ 1/4^{\prime\prime}$ / 31.75mm OD 14.2mm, $1/2^{\prime\prime} \times 1/4^{\prime\prime}$ bores, $115\text{ in}\cdot\text{lbf}$ maximum torque).
 
 ---
 
-### Handoff Specs for Crosshead & CAD
+### Handoff Specifications for CAD & Assembly
 
-| Component | Part & Material | Key Dimensions | Rating | Notes for Crosshead / Assembly |
+| Component | Part & Material | Key Dimensions | Rating | Assembly & Mounting Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| **Leadscrews (x2)** | $1/2^{\prime\prime}-10$ Acme, 1060 Steel | $\varnothing 0.500\text{ in}$ Nominal, 18.0in Long, L=0.100in (2.54mm) | Right-Hand, Single-Start, Class 2C | Spaced Lb=150mm (5.91in) center-to-center |
-| **Flange Nuts (x2)** | McMaster [**97790A110**](https://www.mcmaster.com/97790A110/) (932 Bearing Bronze) | Barrel $\varnothing 1.000\text{ in}$, Total Length 1.750in, Flange $\varnothing 2.000\text{ in} \times 0.375\text{ in}$ thick | 1,200lbf Thrust, 35,000psi Tensile | Needs $\varnothing 1.000\text{ in}$ clearance hole in crosshead + custom bolt holes in the 2.000in flange |
+| **Stepper Motor** | McMaster [**6627T161**](https://www.mcmaster.com/6627T161/) (NEMA 23 Hybrid Stepper) | $2.25^{\prime\prime}$ face ($1.86^{\prime\prime}$ bolt circle, $4 \times 0.20^{\prime\prime}$ holes), $4.24^{\prime\prime}$ body length, $\varnothing 0.2498^{\prime\prime}$ ($1/4^{\prime\prime}$) $\times 0.75^{\prime\prime}$ D-shaft | $600.4\text{ in}\cdot\text{ozf}$ holding torque, 1.8/step, 1,300rpm max | $12.5^{\prime\prime}$ leads (4-wire bipolar); verify shaft and coupler axial clearance |
+| **Motor Mount Bracket** | 6061-T6 Aluminum Plate | 6.00mm thickness (exceeds 2.90mm bearing minimum), NEMA 23 ($1.86^{\prime\prime}$) mounting pattern | y=276MPa, allow=69MPa (ns=4) | Sized for structural stiffness and fastener thread engagement |
+| **Shaft Coupling** | McMaster [**6208K595**](https://www.mcmaster.com/6208K595/) (Aluminum Spiral Beam, Clamp-On) | $1\ 1/4^{\prime\prime}$ (31.75mm) OD $\times 2^{\prime\prime}$ overall length, $1/2^{\prime\prime} \times 1/4^{\prime\prime}$ bores, \#8-32 $\times 1/2^{\prime\prime}$ clamp screws | $115\text{ in}\cdot\text{lbf}$ max torque, 10,000rpm max, $0.015^{\prime\prime}$ parallel / 5 angular / $0.01^{\prime\prime}$ axial | Zero backlash; clamps $1/4^{\prime\prime}$ motor shaft to $1/2^{\prime\prime}$ leadscrew |
 
 ---
 
-## Crosshead Design (Noah Nicholson)
+## Analyze and Design a Frame (Noah Nicholson)
 
-<div align="center" style="margin: 20px 0;">
-  <figure style="display: inline-block; width: 100%; max-width: 900px; margin: 0 auto;">
-    <iframe src="A10CrossheadDesign1.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 4px;">
-      <p>Your browser does not support iframes. 
-         <a href="A10CrossheadDesign1.pdf">Download Crosshead Work.</a>
-      </p>
-    </iframe>
-  </figure>
-</div>
+For the CAD and frame design portion of the project, I built and integrated the tensile tester assembly ([`Tensile Tester`](A11assm.SLDASM)) using the calculated dimensions and downloaded hardware models.
 
-### Notes on Work
-Given the constraints on the crosshead, I had to find the stress and deflection on the crosshead from the given 2000N load. I found that the minimum thickness to meet the stress requirement was 12.77mm. However, the deflection analysis stated that the minimum thickness would need to be at least 8.94mm. Since the stress analysis yielded a larger minimum thickness, we found that the minimum thickness needed on the crosshead would be 12.77mm. I rounded this number to 15.00mm in the rest of my work as shown.
+### CAD Assembly & Component Notes
+- **Simulation & Meshing Issue:** When creating the mesh, everything was checked out correctly just as how it was done in previous uses. However this time, the simulation would get stuck at 96% and then get to 99% at the last second before stating my memory usage was too high and failing to generate a model. After trying multiple fixes the outcome stayed the same.  
+  ![Mesh error](Mesh.png)
+
+- **Crosshead:** This was designed using the dimensions achieved during last week’s assignment.  
+  ![crosshead](crosshead.png)
+
+- **Motor Mount:** Using the diameter and thickness that was needed in the previous work done for this assignment, this was the result for the motor mount at the top of the frame.  
+  ![mount](mount.png)
+
+- **Lead Screw:** This was the downloaded file for the lead screw that we chose. To fit our frame I cut the length down from 2 feet to 18 inches.  
+  ![lead screw](leadscrew.png)
+
+- **Frame:** This is the framework that was used to make the structure of the tensile tester. The frame piece used here was modified multiple times to fit the varied sections of the tensile tester.  
+  ![frame](frame.png)
+
+- **Bearing Mount:** This is the mount that was used to connect the lead screw and the crosshead. This model was also downloaded from McMaster and selected due to its proper threading and desirable dimensions for our purposes.  
+  ![bearing mount](bearingmount.png)
+
+- **Frame Mounting Bracket:** This is another downloaded item from McMaster that was used to connect the different parts of the frame of the tensile tester together.  
+  ![frame mounting bracket](framebracket.png)
+
+- **Final Assembly:** This is the final completed assembly of the tensile tester, as shown, all the previously described parts are on this machine and there were many other iterations that failed because of improper measurements of downloaded models or incorrect constraints when mating.  
+  ![tensile tester](tensiletester.png)
 
 ---
 
-## Bill of Materials & Cost Analysis (Atiba Johnson)
+## Bill of Materials & Design Cost (Atiba Johnson)
+
+### Bill of Materials
 
 | Item # | Qty | Name | Cost / Item | Total Cost | Purchase Link |
 | :---: | :---: | :--- | :---: | :---: | :--- |
-| 1 | 2 | Precision Acme Lead Screw, 1060/Alloy Steel, 1/2"-10 Thread, 2 ft. Long | $65.24 | $130.48 | [Link](https://www.mcmaster.com/6350K61/) |
-| 2 | 2 | Precision Acme Flange Nut, 932 Bearing Bronze, 1/2"-10 Thread | $178.60 | $357.20 | [Link](https://www.mcmaster.com/97790A110/) |
-| 3 | 4 | T-Slotted Framing Single Rail, 40 mm x 40 mm, 2 ft. Long | $21.15 | $84.60 | [Link](https://www.mcmaster.com/6575N25/) |
-| 4 | 8 | T-Slotted Framing Bracket | $7.06 | $56.48 | [Link](https://www.mcmaster.com/5537T937/) |
-| **Total** | | | | **$628.76** | |
+| 1 | 1 | Stepper Motor with Square Body, NEMA 23, 600.4 | $240.27 | $240.27 | [Link](https://www.mcmaster.com/6627T161/) |
+| 2 | 1 | Clamping Precision Flexible Shaft Coupling, Spiral, Aluminum, for 1/2" x 1/4" Shaft Diameter, 2" Long, 1-1/4" OD | $133.16 | $133.16 | [Link](https://www.mcmaster.com/6208K595/) |
+| 3 | 2 | Precision Acme Lead Screw, 1060/Alloy Steel, 1/2"-10 Thread, 2 ft. Long | $65.24 | $130.48 | [Link](https://www.mcmaster.com/6350K61/) |
+| 4 | 2 | Precision Acme Flange Nut, 932 Bearing Bronze, 1/2"-10 Thread | $178.60 | $357.20 | [Link](https://www.mcmaster.com/97790A110/) |
+| 5 | 4 | T-Slotted Framing Single Rail, 40 mm x 40 mm, 2 ft. Long | $21.15 | $84.60 | [Link](https://www.mcmaster.com/6575N25/) |
+| 6 | 8 | T-Slotted Framing Bracket | $7.06 | $56.48 | [Link](https://www.mcmaster.com/5537T937/) |
+| 7 | 1 | Alloy Steel Acme Lead Screw Right Hand, 1/2"-10 Thread Size, 2 Feet Long | $39.17 | $39.17 | [Link](https://www.mcmaster.com/93410A112/) |
+| **Total** | | | | **$1041.36** | |
+
+### Design Cost
+
+| Person | Hours Worked | Cost/Hour | Total Cost |
+| :--- | :---: | :---: | :---: |
+| Randy | 4.6 | $35 | $161 |
+| Noah | 8.7 | $35 | $304.5 |
+| Atiba | 3 | $35 | $105 |
 
 ---
 
-## Lessons Learned & Project Takeaways
+### Lessons Learned & Project Takeaways
 
-- **Team Coordination:** Working as a group really highlighted how important it is to communicate early and lock down key interfaces—like keeping our center-to-center span and hole clearances aligned between the drivetrain calculations and the crosshead CAD.
-- **Checking Multiple Constraints:** Comparing our stress and deflection limits showed us why it's critical to evaluate different failure modes instead of just relying on the first number you calculate, since the stricter requirement ended up driving our final thickness.
-- **Hardware Selection:** We learned quickly that generic off-the-shelf parts don't always cut it for load-bearing applications, so taking the extra time to track down rated components gave us much more confidence in the actual safety factors of our design.
+- **Hardware & Interface Verification:** Checking exact dimensions, shaft profiles, bore sizes, and load ratings upfront saved rework—confirming the NEMA 23 motor (`6627T161`), clamp-on flexible beam coupling (`6208K595`), and `1/2"-10` Acme leadscrews/flange nuts early kept our CAD mates, axial clearances, and safety factors aligned across the team.
+- **Designing Beyond Minimum Stress Limits:** Hand calculations for bearing stress and torsional shear establish safe minimums, but practical factors like bracket rigidity, fastener thread engagement, and torque margin drive real-world choices (such as selecting a `6.00 mm` 6061-T6 mount plate over the `2.90 mm` bearing minimum and a `1 1/4"` OD coupling over the `14.2 mm` minimum OD).
+- **CAD & Simulation Workflow:** Iterating on frame parts, trimming leadscrew length to fit the assembly, and troubleshooting meshing memory limits highlighted how sensitive full-assembly FEA and mating constraints can be—making clean sub-assemblies and early dimension checks essential.
+- **Cost & Scope Tracking:** Keeping a clear BOM alongside labor hours made it easy to track total hardware and engineering costs as parts were selected, updated, and integrated into the final assembly.
 
-  ---
-  
 <div align="center" style="margin: 25px 0; gap: 12px; display: flex; justify-content: center; flex-wrap: wrap;">
-  <a href="A10.zip" download="A10.zip" style="
+  <a href="A11.zip" download="A11.zip" style="
     background-color: #1976d2; 
     color: white; 
-    text-decoration: none;
-    padding: 12px 22px; 
-    font-size: 0.95em; 
-    font-weight: bold; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-    display: inline-block;
-    transition: background-color 0.2s;">
-    📦 Download All Project Files &amp; Calculations (.zip)
-  </a>
-</div>
-
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['',''], ['\\(', '\\)']],
-      displayMath: [['
-','
-'], ['\\[', '\\]']]
-    }
-  };
-</script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-
-
